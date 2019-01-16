@@ -1,0 +1,24 @@
+body {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  --margin: 1rem;
+  --modifier: calc(40rem - 100%);
+  margin: calc(var(--margin) * -1);
+}
+
+.container > * {
+  background-color: dodgerblue;
+  min-width: calc(33% - (var(--margin) * 2));
+  max-width: 100%;
+  flex-grow: 1;
+  flex-basis: calc(var(--modifier) * 999);
+  height: 20vh;
+  margin: var(--margin);
+  box-shadow: 5px 5px 
+}
